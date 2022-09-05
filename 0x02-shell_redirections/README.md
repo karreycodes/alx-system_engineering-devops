@@ -32,22 +32,22 @@
 
  16-whatsnext displays lines containing the pattern “root” and 3 lines after them in the file /etc/passwd.
 
-File 17-hidethisword displays all the lines in the file /etc/passwd that do not contain the pattern “bin”.
+ 17-hidethisword displays all the lines in the file /etc/passwd that do not contain the pattern “bin”.
 
-File 18-letteronly displays all lines of the file /etc/ssh/sshd_config starting with a letter.
+ 18-letteronly displays all lines of the file /etc/ssh/sshd_config starting with a letter.
 
-File 19-AZ replaces all characters A and c from input to Z and e respectively.
+ 19-AZ replaces all characters A and c from input to Z and e respectively.
 
-File 20-hiago is a script that removes all letters c and C from input.
+ 20-hiago is a script that removes all letters c and C from input.
 
-File 21-reverse is a script that reverse its input.
+ 21-reverse is a script that reverse its input.
 
-File 22-users_and_homes is a script that displays all users and their home directories, sorted by users.
+ 22-users_and_homes is a script that displays all users and their home directories, sorted by users.
 
-File 100-empty_casks is a command that finds all empty files and directories in the current directory and all sub-directories.
+ 100-empty_casks is a command that finds all empty files and directories in the current directory and all sub-directories.
 
-File 101-gifs is a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+ 101-gifs is a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
 
-File 102-acrostic is a script that decodes acrostics that use the first letter of each line.
+ 102-acrostic is a script that decodes acrostics that use the first letter of each line.
 
-File 103-the_biggest_fan is a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+ 103-the_biggest_fan is a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
