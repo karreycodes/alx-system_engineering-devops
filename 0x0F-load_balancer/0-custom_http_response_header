@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#configure web-02 to be identical to web-01
+#The name of the custom HTTP header must be X-Served-By
+#The value of the custom HTTP header must be the hostname of the server Nginx is running on
+sudo apt-get update
+sudo apt-get -y install nginx
+
+#configure firewall to allow request through port 80
+sudo ufw allow 'Nginx HTTP'
+
+sudo mkdir -p /var/www/html
+
+#change permissions to allow easy creation of files in this directory
+sudo chmod -R 755 /var/www
+
+#create an index page
+echo 'Hello world!' |sudo tee /var/www/html/index.html
+
+#create error page for error 404
+echo "Ceci n'est pas une page" |sudo tee /var/www/html/404.html
