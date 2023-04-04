@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
-# Installs, configures, and starts the server
+# Install nginx --> engine x
 apt-get update
 apt-get -y install nginx
+sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
-mkdir -p /var/www/html/
+sudo chown -R "$USER":"$USER" /var/www/html
 sudo chmod -R 755 /var/www
-echo 'Hello World!' > /var/www/html/index.html
-SERVER_CONFIG=\
-"server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
-	root /var/www/html;
-	
+echo -e "Hello World!" > /var/www/html/index.html
+sudo sed -i '24i\	rewrite ^/redirect_me https://www.youtube.com/watch?v=JvQ3ZvQffso permanent;' /etc/nginx/sites-available/default
+sudo service nginx restart
